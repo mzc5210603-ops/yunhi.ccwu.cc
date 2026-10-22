@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>器械铺 · 万用工具墙</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="shop-sign">
+  <div class="sign-plate">
+    <h1>器械铺<span>万用工具墙</span></h1>
+    <p class="sign-sub">TOOL&nbsp;SHED&nbsp;No.24&nbsp;&nbsp;·&nbsp;&nbsp;车间自取&nbsp;&nbsp;·&nbsp;&nbsp;全部本地运算</p>
+  </div>
+  <div class="sign-badge">
+    <b id="clock">--:--:--</b>
+    <i>营业中</i>
+  </div>
+</header>
+
+<main class="board-wrap">
+  <div class="board-head">
+    <b>工具墙</b>
+    <span id="toolCount">—</span>
+  </div>
+  <ul class="pegboard" id="pegboard"></ul>
+</main>
+
+<section class="bench" id="bench" hidden>
+  <div class="bench-head">
+    <span class="bench-tag" id="benchTag">—</span>
+    <h2 id="benchName">—</h2>
+    <button id="benchClose" title="放回工具墙">✕ 挂回去</button>
+  </div>
+  <div class="bench-body" id="benchBody"></div>
+</section>
+
+<footer class="status-rail">
+  <span id="stClock">器械铺 · 营业中</span>
+  <span class="st-dots"></span>
+  <span id="stTool">未取用工具</span>
+</footer>
+
+<div id="errSink" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
